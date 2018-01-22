@@ -1,0 +1,5 @@
+services:
+    domain_creation_event_subscriber:
+        class: Drupal\domain_creation\EventSubscriber\PageredirectSubscriber
+        tags:
+            - {name: event_subscriber}

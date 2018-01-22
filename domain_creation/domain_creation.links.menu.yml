@@ -1,0 +1,11 @@
+adding.domain:
+  title: Add Domain
+  description: 'Add a domain'
+  route_name: domain.add
+  parent: system.admin_config_ui
+  
+listing.domain:
+  title: Domain List
+  description: 'View the domain list, where you can modify those added domains'
+  route_name: domain.list
+  parent: system.admin_config_ui

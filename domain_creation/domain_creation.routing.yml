@@ -1,0 +1,23 @@
+domain.add:
+  path: '/domain'
+  defaults:
+    _controller: '\Drupal\domain_creation\Controller\DisplayForm::displayForm'
+    _title: 'Add Domain'
+  requirements:
+    _permission: 'access content'
+    
+domain.list:
+  path: '/domain/list'
+  defaults:
+    _controller: '\Drupal\domain_creation\Controller\DisplayForm::displayList'
+    _title: 'Domain List'
+  requirements:
+    _permission: 'access content'
+    
+domain.delete:
+  path: '/domain/delete/{id}'
+  defaults:
+    _form: '\Drupal\domain_creation\Form\DomainDeletionForm'
+    _title: 'Deleting a Domain'
+  requirements:
+    _access: 'TRUE'

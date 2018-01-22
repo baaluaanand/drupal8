@@ -1,0 +1,5 @@
+name: Domain Creation Module
+description: Creating a module to manage the domain creation
+package: Custom
+type: module
+core: 8.x

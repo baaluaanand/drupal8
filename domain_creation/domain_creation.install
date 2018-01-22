@@ -1,0 +1,23 @@
+<?php
+function domain_creation_schema() {
+  $schema['domain_creation'] = array(
+    'fields' => array(
+      'id'=>array(
+    	'type'=>'serial',
+    	'not null' => TRUE,
+      ),
+      'name'=>array(
+        'type' => 'varchar',
+        'length' => 10,
+        'not null' => TRUE,
+      ),
+      'language'=>array(
+        'type' => 'varchar',
+        'length' => 10,
+        'not null' => TRUE,
+      ),
+    ),
+  	'primary key' => array('id'),
+  );
+  return $schema;
+}
